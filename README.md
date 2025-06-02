@@ -31,122 +31,122 @@ Publish the website in the LocalHost.
 # PROGRAM:
 ~~~
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>My Cover</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Georgia', serif;
-            background linear-gradient(135deg, #f3e5ab, #e8d094);
-           
+            background-color: #000;
         }
-        .book-cover {
-            width: 470px;
-            height: 650px;
-            background-image: url('bg.png');
-            border: 4px solid brown;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 30px;
-            text-align: center;
-        }
-        .title {
-            font-size: 50px;
-            font-weight:bolder;
-            color: #ffffff;
-            font-family: "BankGothic MD BT";
-            background-color: rgb(134, 2, 28); opacity: 100%;
-        }
-        .author {
-            font-size: 29px;
-            margin-top 10px;
-            color:black;
-            background: linear-gradient(to right,rgb(255, 2255, 255, 0.5),rgb(134, 2, 28, 0.5));
-            font-family: "Times New Roman";
-            font-weight: 900;
-            text-align: right;
-        }
-        .image{
-            width: 100px; text-align: center;
-        }
-        .Author{
-            
-            width: 100px;
-           float: right; 
-        }
-        .images{
-            display: flex;
-            width: 5px;
-        }
-        .about{
-            letter-spacing: 2px;
-            color: black;
-            font-weight: 400;
-            background-color: white; opacity: 100%;
-        }
-        .publisher {
-            font-size: 18px;
-            color: #6b4f3f;
-        }
-        .cover-design {
-            margin-top: 0px;
-            background-image: url('author.png');
+
+        .bookpage {
+            width: 400px;
+            height: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            background-image: url('background.jpg'); /* Change to your image name */
             background-size: cover;
             background-position: center;
-            height: 210px;
-            border: 1px solid #b5651d;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            position: relative;
+            border-radius: 15px;
         }
-        .about2{
-            font-weight: 200;
-            font-style: italic;
-            background-color: white;opacity:100%;
+
+        .insight {
+            color: #ffa500;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
         }
-        .about2sub{
-            letter-spacing: 1px;
-            font-weight: 500;
-            font-size:medium;
-            background-color: white;opacity:100%;
+
+        .hrstyle hr {
+            width: 50%;
+            margin: 10px auto;
+            border: 1px solid #ff66cc;
         }
-        .footer {
+
+        .booktitle h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: oblique;
+            color: #fffacd;
+            margin-top: 30px;
+        }
+
+        .subtitle {
+            color: #e0f7fa;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .mypic img {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+
+        .author {
+            position: absolute;
+            bottom: 100px;
+            left: 20px;
+            font-family: cursive;
+            color: #ffb6c1;
+        }
+
+        .pub {
+            position: absolute;
+            bottom: 60px;
+            left: 20px;
             font-size: 14px;
-            margin-top: 0px;
-            color: whitesmoke;
-            font-family: "Caveat", cursive;
-            justify-content: center;
-            width: 470px;
-            height: 20px;
-            background-color: rgb(134, 2, 28); opacity: 90%;
-}
+            color: #ff4d4d;
+        }
+
+        .ed {
+            position: absolute;
+            bottom: 40px;
+            left: 20px;
+            font-size: 14px;
+            color: #fdfd96;
+            font-weight: bold;
+        }
+
+        .id hr {
+            border-color: #daa520;
+            width: 90%;
+            margin: 50px auto 0;
+        }
     </style>
 </head>
 <body>
-
-    <div class="book-cover">
-        <div class="title">BASICS OF PYTHON PROGRAMMING</div>
-        <div class="author"> ~GUIDO VAN ROSSUM</div>
-        
-        <div class="cover-design"></div>
-        <div class="about">LESSONS FOR BEGINNERS TO PROFESSIONALS </div>
-        <h3 class="about2">"Programming is not a science.Its a CRAFT" </h3>
-        <h2 class="about2sub">-RICHARD STALLMAN </h2>
-        <div class="footer">Best Selling Book for PYTHON PRG</div>
+    <div class="bookpage">
+        <div class="insight">SAVIEANS WORK</div>
+        <div class="hrstyle"><hr></div>
+        <div class="booktitle"><h1>WEB DEVELOPMENT</h1></div>
+        <div class="subtitle">Learn WEB from the expert</div>
+        <div class="mypic"><img src="my.jpg" alt="Author's Photo"></div>
+        <div class="id"><hr></div>
+        <div class="author"><b>SYED SAIF</b></div>
+        <div class="pub">SEC</div>
+        <div class="ed">3rd Edition</div>
     </div>
-
 </body>
-</html
+</html>
+
 
 ~~~
 # OUTPUT:
-![image](https://github.com/user-attachments/assets/d88bfe87-2ee3-4681-b85e-cb182892425e)
-![image](https://github.com/user-attachments/assets/a3775544-c648-48fd-8b65-06e38700f807)
-![image](https://github.com/user-attachments/assets/34b2fece-7a9b-41b3-886c-f978000dd228)
+![image](https://github.com/user-attachments/assets/1b2bf390-16d2-4d19-81a8-3f4b684efa73)
+
 
 
 
